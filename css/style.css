@@ -99,7 +99,7 @@ main p {
 .cd-nav-trigger {
   position: fixed;
   z-index: 3;
-  left: 5%;
+  left: 2%;
   top: 20px;
   height: 54px;
   width: 54px;
@@ -417,7 +417,7 @@ a.readbook {
     max-width: none;
     text-align: left;
     text-decoration: none;
-    color: #44504d;
+    color: #303c31;
     font-size: 1em;
 }
 a.readbook a:active {
@@ -446,17 +446,17 @@ ul#chaper_ul li {
     border-right: #224235 1px double;
     table-layout: fixed;
     padding-right: 0px;
-    border-right: #224235 1px double;
-    padding-left: 10px;
+/*    border-right: #224235 1px double;*/
+    padding-left: 0px;
     float: left;
     padding-bottom: 0px;
     overflow: hidden;
-    border-left: #224235 1px double;
-    width: 217px;
+/*    border-left: #224235 1px double;*/
+    width: 240px;
     border-bottom: #224235 1px double;
     height: 30px;
     line-height: 30px;
-    background-color: #a7d3ba;
+    background-color: #abbfb4;
     text-align: left;
 }
 a#lastlist {
@@ -495,20 +495,20 @@ p#article {
     font-size: 0.9em;
     display: block;
     text-align: left;
-}
-a#front_page,a#next_page a {
-    display: block;
+    color: #1f2727;
 }
 a#front {
-    color: #e510b4;
+    color: #d15118;
     text-align: left;
     text-decoration: none;
-    font-size: 1em;
+    font-size: 1.1em;
+    margin: 14em;
 }
 a#next{
-    color: #e510b4;
-    text-align: left;
+    color: #d15118;
+    text-align: right;
     text-decoration: none;
-    font-size: 1em;
+    font-size: 1.1em;
+    margin: 20em;
 }
 
