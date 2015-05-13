@@ -1,5 +1,5 @@
 var xmlHttp = new XMLHttpRequest();
-var serverURL = "192.168.81.197";
+var serverURL = "localhost";
 
 function xmlHttpRequest() {
     var URL = "http://" +serverURL+ ":8080/GetDateWithServlet?lanmuList";
@@ -26,7 +26,7 @@ function lanmuList(xmldoc) {
             var get_name = result[i].getAttribute("name");
             var get_url = result[i].firstChild.nodeValue;
             lanmu_list = document.createElement("a");
-            lanmu_list.setAttribute("class","class_a");
+            lanmu_list.setAttribute("class","selected");
             lanmu_list.setAttribute("href",get_url);
             var lanmu_name = document.createTextNode(get_name);
             lanmu_list.appendChild(lanmu_name);
@@ -103,6 +103,8 @@ function bookList(xmldoc) {
 //点击阅读
         bookname_list.onclick = function() {
              //清空
+            var first = document.getElementsByClassName("first");
+            $(first).empty();
             var article = document.getElementById("article");
             $(article).empty();
             var chapter = document.getElementById("chapter");
@@ -240,7 +242,7 @@ function chapterList(xmldoc) {
         li.appendChild(a);
         chaper_ul.appendChild(li);
         var chapter = document.getElementById("chapter");
-        insterAfter(chaper_ul, chapter);
+        $(chaper_ul).appendTo(chapter)
     }
     //点击章节
     var read_book = document.getElementsByClassName("readbook");

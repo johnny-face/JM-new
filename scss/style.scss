@@ -26,7 +26,7 @@ html {
 
 body {
 	font: {
-		size: 1.6rem;
+		size: 1.1rem;
 		family: $primary-font; // variables inside partials > _variables.scss
 	}
 	color: $color-1;
@@ -253,8 +253,8 @@ main {
 
 	h2 {
 		position: relative;
-		margin-bottom: 1.7em;
-		font-size: 1.3rem;
+		margin-bottom: 1.2em;
+		font-size: 1.8rem;
 		font-weight: 800;
 		color: darken($color-1, 15%);
 		text-transform: uppercase;
@@ -275,12 +275,12 @@ main {
 		margin-top: 60px;
 
 		li {
-			margin: 1.6em 0;
+			margin: 1.3em 0;
 		}
 
 		a {
 			font-family: $secondary-font;
-			font-size: 2.4rem;
+			font-size: 1.4rem;
 			color: rgba($color-3, .3);
 			display: inline-block;
 
@@ -334,18 +334,18 @@ main {
 		}
 
 		h2 {
-			font-size: 1.5rem;
+			font-size: 1.8rem;
 			margin-bottom: 5.6em;
 		}
 
 		.cd-primary-nav {
 
 			li {
-				margin: 2em 0;
+				margin: 1em 0;
 			}
 
 			a {
-				font-size: 4.4rem;
+				font-size: 2.4rem;
 			}
 
 		}
